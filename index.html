@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Workout App">
+    <meta name="ROBOTS" content="Lifestyle">
+    <meta name="description" content="Workout App website">
+    <meta name="abstract" content="Workout App website">
+   
+    <meta name="author" content="Workout App">
+    <meta name="publisher" content="Workout App">
+    <meta name="copyright" content="Workout App">
+    <meta name="revisit-after" content="2 days">
+<!--     <link rel="shortcut icon" href="assets/img/favicon.png">-->
+
+    <title>Workout App</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <!-- siimple style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="cloud floating">
+        <img src="assets/img/cloud.png">
+    </div>
+
+    <div class="cloud pos1 fliped floating">
+        <img src="assets/img/cloud.png">
+    </div>
+
+    <div class="cloud pos2 floating">
+        <img src="assets/img/cloud.png">
+    </div>
+
+    <div class="cloud pos3 fliped floating">
+        <img src="assets/img/cloud.png">
+    </div>
+
+
+    <div id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <img src="assets/img/logo.png" alt="Logo">
+                    <br/>
+                    <br/>
+                    <h2 class="subtitle">We're working hard to launch our website and we'll be ready very soon! Pls give me ur email. thx.</h2>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> - Workout App
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+    $('#wrapper').height($(document).height());
+    function appendResult(userText , className, iconClass){
+      var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
+      $('body').append(resultHTML);
+      $('.result').delay(10000).fadeOut('1000');
+    }
+    </script>
+
+</body>
+
+</html>
